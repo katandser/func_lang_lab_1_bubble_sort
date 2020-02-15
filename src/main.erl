@@ -22,5 +22,7 @@ swap([H | T]) -> [H | swap(T)].
 
 det_test() -> [
 
-  ?_assertEqual(swap([3,2,1]), [1,2,3])
+  ?assertEqual(swap([3,2,1]), [2,1,3]),
+  ?assertEqual(swap([5,6,1]), [5,1,6]),
+  ?assertEqual(swap([3,2,5]), [2,3,5])
 ].
